@@ -1,0 +1,28 @@
+nav:
+  about: About
+  contribute: Contribute
+
+index:
+  lead: オープンソースソフトウェアとは、あなたのような人々によって作られています。プロジェクトを立ち上げ、成長させる方法を学びましょう。
+
+article:
+  table_of_contents: カテゴリ
+
+footer:
+  contribute:
+    heading: Contribute
+    description: 提案はありますか？このコンテンツはオープンソールです。改善の手助けをお願いします。
+    button: Contribute
+  subscribe:
+    heading: 更新を購読する
+    label: メールアドレス
+    button: 購読
+  byline:
+    # [code], [love], and [github] will be replaced by octicons
+    format: "[code] with [love] by [github] and [friends]"
+    # Label for code octicon
+    code_label: code
+    # Label for love octicon
+    love_label: love
+    # Label for the contributors link
+    friends_label: friends
