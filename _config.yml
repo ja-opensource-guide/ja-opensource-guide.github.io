@@ -1,12 +1,12 @@
-title: "Open Source Guides"
-description: "Learn how to launch and grow your project."
+title: "オープンソースガイド"
+description: "オープンソースのプロジェクトを立ち上げ、成長させる方法。"
 
 # See: docs/translations.md
-locale: en-US
+locale: ja-JP
 translations:
-  en-US:
-    name: English (US)
-    url: https://opensource.guide
+  ja-JP:
+    name: Japanese
+    url: https://ja.opensource.guide
 
 exclude:
   - bin
