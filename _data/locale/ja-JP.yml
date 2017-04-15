@@ -1,6 +1,6 @@
 nav:
-  about: About
-  contribute: Contribute
+  about: このガイドについて
+  contribute: 貢献する方法
 
 index:
   lead: オープンソースソフトウェアとは、あなたのような人々によって作られています。プロジェクトを立ち上げ、成長させる方法を学びましょう。
@@ -10,9 +10,9 @@ article:
 
 footer:
   contribute:
-    heading: Contribute
+    heading: 貢献
     description: 提案はありますか？このコンテンツはオープンソールです。改善の手助けをお願いします。
-    button: Contribute
+    button: 貢献する
   subscribe:
     heading: 更新を購読する
     label: メールアドレス
