@@ -1,7 +1,7 @@
 ---
-locale: en-US
-title: How to Contribute to Open Source
-description: Want to contribute to open source? A guide to making open source contributions, for first-timers and for veterans.
+locale: ja-JP
+title: オープンソースに貢献する方法
+description: オープンソースに貢献したいですか。初心者から上級者のためのオープンソースに貢献するためのガイドラインです。
 class: contribute
 toc:
   why-contribute-to-open-source: "Why contribute to open source?"
