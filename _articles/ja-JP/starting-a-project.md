@@ -1,8 +1,8 @@
 ---
-locale: en-US
-title: Starting an Open Source Project
-description: Learn more about the world of open source and get ready to launch your own project.
-class: beginners
+locale: ja-JP
+title: オープンソースプロジェクトを立ち上げる
+description: オープンソースの世界への理解を深め、自分のプロジェクトを立ち上げる準備をする
+class: 入門者
 toc:
   the-what-and-why-of-open-source: "The what and why of open source"
   should-i-launch-my-own-open-source-project: "Should I launch my own open source project?"
@@ -11,29 +11,54 @@ toc:
   your-pre-launch-checklist: "Your pre-launch checklist"
 order: 2
 image: /assets/images/cards/beginner.png
+
+locale: en-US
+title: Starting an Open Source Project
+description: Learn more about the world of open source and get ready to launch your own project.
+class: beginners
 ---
 
+## オープンソースとは何か、なぜオープンソースなのか
 ## The "what" and "why" of open source
 
+あなたはオープンソースで何かを始めようと考えていますか？おめでとうございます！世界中の人々はあなたの貢献を歓迎しています。ではオープンソースとは何なのか、なぜ人々はオープンソースでやるのかについて話しましょう。
 So you're thinking about getting started with open source? Congratulations! The world appreciates your contribution. Let's talk about what open source is and why people do it.
 
+### オープンソースとは何を意味するのか？
 ### What does "open source" mean?
 
+#TODO:set correct link url
+あるプロジェクトがオープンソースであるということは、そのプロジェクトが「あらゆる目的で、だれでも閲覧できる、利用できる、修正できる、再配布できる」ことを意味します。それらの許可は[オープンソースライセンス](h)によって決められています。
 When a project is open source, that means **anybody can view, use, modify, and distribute your project for any purpose.** These permissions are enforced through [an open source license](https://opensource.org/licenses).
 
+オープンソースの魅力は、アイディアを急速に拡散させ、ソフトウェアを採用する障壁を低くすることにある。
 Open source is powerful because it lowers the barriers to adoption, allowing ideas to spread quickly.
 
+オープンソースのはたらきを理解するには、こんな想像をしてみよう。友人から持ち寄りのパーティーに誘われ、あなたはチェリーパイを持参したとする。
 To understand how it works, imagine your friend is having a potluck, and you bring a cherry pie.
 
+* みんながチェリーパイを食べる (利用)
+* チェリーパイは大好評！みんなはあなたにどのようにして作ったのかパイのレシピを尋ねる (閲覧)
+* パティシエである友人アレックスが、砂糖を少なくしたらもっと美味しくなるのではないかと提案する (修正)
+* 別の友人リサが、アレックスの考案したレシピを来週のディナーで利用してもよいかと尋ねる (再配布)
 * Everybody tries the pie (_use_)
 * The pie is a hit! They ask you for the recipe, which you provide (_view_)
 * One friend, Alex, who's a pastry chef, suggests reducing the sugar (_modify_)
 * Another friend, Lisa, asks to use it for a dinner next week (_distribute_)
 
+それに対して、ソースコードを公開しないプロセスを例えるなら、レストランでチェリーパイを注文するようなものだ。あなたは代金を支払う必要があるし、レシピを知りたいと思ってもレストランは教えてくれないだろう。もしあなたがパイの作り方を正確にマネをして自分の看板で売ろうとすれば、おそらくレストランはあなたに対抗する行動を起こすだろう。
 By comparison, a closed source process would be going to a restaurant and ordering a slice of cherry pie. You must pay a fee to eat the pie, and the restaurant probably won't give you their recipe. If you copied their pie exactly and sold it under your own name, the restaurant could take action against you.
 
+### なぜ人々は作ったものをオープンソースにするのか
 ### Why do people open source their work?
 
+<aside markdown="1" class="pquote">
+  <img src="https://avatars1.githubusercontent.com/u/1500684?v=3&s=460" class="pquote-avatar" alt="avatar">
+  私がオープンソース上の共同作業を通じて得たもっとも価値のある経験は、私が直面した問題に、おなじく頭を抱えている他の開発者がいて、彼らと関係性を築けたことだ。
+  <p markdown="1" class="pquote-credit">
+— @kentcdodds, ["どうやってオープンソースを最高！と思えるようになったか"](https://medium.com/@kentcdodds/how-getting-into-open-source-has-been-awesome-for-me-8480cd756a80#.pjt9oqp4w)
+  </p>
+</aside>
 <aside markdown="1" class="pquote">
   <img src="https://avatars1.githubusercontent.com/u/1500684?v=3&s=460" class="pquote-avatar" alt="avatar">
   One of the most rewarding experiences I get out of using and collaborating on open source comes from the relationships that I build with other developers facing many of the same problems I am.
@@ -42,42 +67,70 @@ By comparison, a closed source process would be going to a restaurant and orderi
   </p>
 </aside>
 
+[たくさんの理由があるが](http://ben.balter.com/2015/11/23/why-open-source/) 、なぜ開発者や組織がオープンソースでプロジェクトを始めようと思うのか。それにはいくつかの例が挙げられる:
 [There are many reasons](http://ben.balter.com/2015/11/23/why-open-source/) why a person or organization would want to open source a project. Some examples include:
 
+* **共同作業:** オープンソースプロジェクトは世界中の誰からの変更も受け入れることができる。 [Exercism](https://github.com/exercism/)の例でいえば、350人を超えるコントリビュータをもつプログラミング訓練プラットフォームである。
 * **Collaboration:** Open source projects can accept changes from anybody in the world. [Exercism](https://github.com/exercism/), for example, is a programming exercise platform with over 350 contributors.
 
+* **採用し、加工する:** オープンソースプロジェクトは近しい目的を持つあらゆる人が使うことができる。別のものを作るために使うこともできる。[WordPress](https://github.com/WordPress)の例でいえば、[b2](https://github.com/WordPress/book/blob/master/Content/Part%201/2-b2-cafelog.md)と呼ばれる既存プロジェクトのフォークとしてプロジェクトを始めることができる。
 * **Adoption and remixing:** Open source projects can be used by anyone for nearly any purpose. People can even use it to build other things. [WordPress](https://github.com/WordPress), for example, started as a fork of an existing project called [b2](https://github.com/WordPress/book/blob/master/Content/Part%201/2-b2-cafelog.md).
 
+* **透明性:** あらゆる人がオープンソースプロジェクトのエラーや矛盾を検査できる。透明性は[ブルガリア](https://medium.com/@bozhobg/bulgaria-got-a-law-requiring-open-source-98bf626cf70a)や[アメリカ](https://sourcecode.cio.gov/)のような政治にとって重要である。また、銀行や医療など法的に規制された産業にも重要であるし、あるいは[Let's Encrypt](https://github.com/letsencrypt)のようなセキュリティソフトウェアにも重要である。.
 * **Transparency:** Anyone can inspect an open source project for errors or inconsistencies. Transparency matters to governments like [Bulgaria](https://medium.com/@bozhobg/bulgaria-got-a-law-requiring-open-source-98bf626cf70a) or the [United States](https://sourcecode.cio.gov/), regulated industries like banking or healthcare, and security software like [Let's Encrypt](https://github.com/letsencrypt).
 
+オープンソースはソフトウェア以外の分野でも重要である。あなたはデータセットから書籍へとあらゆるものをオープンソースにすることができる。[GitHub Explore](https://github.com/explore)を見れば、ソフトウェア以外のどのようなアイディアにオープンソースが用いられているか分かる。
 Open source isn't just for software, either. You can open source everything from datasets to books. Check out [GitHub Explore](https://github.com/explore) for ideas on what else you can open source.
 
+### オープンソースは「無料」を意味するか？
 ### Does open source mean "free of charge"?
 
+オープンソースの最大の特徴のひとつは、コストをかけずに利用できることである。しかし、「無料」であることはオープンソースの本質的な価値から生じた副産物である。
 One of open source's biggest draws is that it does not cost money. "Free of charge", however, is a byproduct of open source's overall value.
 
-Because [an open source license requires](https://opensource.org/osd-annotated) that anyone can use, modify, and share your project for nearly any purpose, projects themselves tend to be free of charge. If the project cost money to use, anyone could legally make a copy and use the free version instead.
+オープンソースライセンスは次のことを義務付ける。同じような目的をもつあらゆる人たちに利用、修正、共有できるようにすることだ。したがって、プロジェクト自体は無料になる傾向がある。なぜなら、もしプロジェクトを有料にしても、だれでも無料版のコピーを作れるため、その無料版を代わりに使うと思われるからだ。
+Because [an open source license requires](https://opensource.org/osd-annotated) that 
+anyone can use, modify, and share your project for nearly any purpose, 
+projects themselves tend to be free of charge. 
+If the project cost money to use, anyone could legally make a copy and use the free version instead.
 
+その結果、ほとんどのオープンソースプロジェクトは自由であるが、「無料」であることはオープンソースの定義に含まれていない。オープンソースプロジェクトを間接的に課金することは可能であり、２つのライセンスを適用したり、利用できる機能に制限をかけるなどをして、オープンソースの公式的なルールを破らないことはできる。
 As a result, most open source projects are free, but "free of charge" is not part of the open source definition. There are ways to charge for open source projects indirectly through dual licensing or limited features, while still complying with the official definition of open source.
 
+## 私は自分でオープンソースプロジェクトを立ち上げるべきか？
 ## Should I launch my own open source project?
 
+簡潔に答えるなら「その通り」だ。なぜなら、結果を求められるわけではないから。自分でオープンソースプロジェクトを立ち上げることで、それがどういうものか理解を深めることができる。
 The short answer is yes, because no matter the outcome, launching your own project is a great way to learn how open source works.
 
+もしあなたがこれまでオープンソースプロジェクトを立ち上げたことがないとすれば、他者がどう反応するだろう、あるいはだれも気づいてくれないのではないか、と心配しているかもしれない。もしそうだとすれば、心配する必要はない。あなたはひとりではないのだから！
 If you've never open sourced a project before, you might be nervous about what people will say, or whether anyone will notice at all. If this sounds like you, you're not alone!
 
+オープンソースワークは執筆業や絵画など、ほかの創造的な活動と似ている。あなたが作ったものを誰かに共有することは怖いかもしれないが、その気持ちとうまく付き合う最良の方法は、実際にやってみることだ。たとえ共有する相手がいなかったとしても。
 Open source work is like any other creative activity, whether it's writing or painting. It can feel scary to share your work with the world, but the only way to get better is to practice - even if you don't have an audience.
 
+もしあなたが確信できていないとしても、少しの時間をとって考えてみてほしい。あなたのゴールはどこにあるのか。
 If you're not yet convinced, take a moment to think about what your goals might be.
 
+### ゴールを設定する
 ### Setting your goals
 
+ゴールを設定することは、自分が何をやろうとしているのか理解する助けになる。また、何をやらないのか、どういう部分で他者の助けが必要なのか知ることにもなる。自分自身に問いかけることから始めよう。なぜ私はこのプロジェクトをオープンソースにするのか？
 Goals can help you figure out what to work on, what to say no to, and where you need help from others. Start by asking yourself,  _why am I open sourcing this project?_
 
+その答えはひとつの絶対的な答えがあるわけではない。ひとつのプロジェクトに複数のゴールが存在することはありえるし、別のゴールをもったいくつかのプロジェクトがあるかもしれない。
 There is no one right answer to this question. You may have multiple goals for a single project, or different projects with different goals.
 
+あなたのゴールは自分が作ったものを見せびらかすことかもしれないし、他者からのコントリビュートを望まないかもしれないし、READMEにそう書きたいかもしれない。あるいは、他者からのコントリビュートを得たい、時間をかけてドキュメントを分かりやすくして興味を持ってくれた他者を歓迎したい、と考えるかもしれない。
 If your only goal is to show off your work, you may not even want contributions, and even say so in your README. On the other hand, if you do want contributors, you'll invest time into clear documentation and making newcomers feel welcome.
 
+<aside markdown="1" class="pquote">
+  <img src="https://avatars2.githubusercontent.com/u/3520168?v=3&s=460" class="pquote-avatar" alt="avatar">
+  ある時期に、私はUIAlertViewを自分でカスタマイズして使っていましたが、これをオープンソースにしようと決断しました。そして、よりダイナミックなものに修正して、GitHubにアップロードしました。また、開発者の人々に使ってもらうために、使い方を説明したドキュメントを初めて書きました。とても簡単なプロジェクトだったので、おそらく誰も使わなかったと思います。しかし、自分のプロジェクトをオープンソースで公開したことに、私は満足感を覚えました。
+  <p markdown="1" class="pquote-credit">
+— @mavris, ["独学のソフトウェア開発者: なぜオープンソースにすることは自分のためになるのか"](https://medium.com/rocknnull/self-taught-software-engineers-why-open-source-is-important-to-us-fe2a3473a576#.zhwo5krlq)
+  </p>
+</aside>
 <aside markdown="1" class="pquote">
   <img src="https://avatars2.githubusercontent.com/u/3520168?v=3&s=460" class="pquote-avatar" alt="avatar">
   At some point I created a custom UIAlertView that I was using...and I decided to make it open source. So I modified it to be more dynamic and uploaded it to GitHub. I also wrote my first documentation explaining to other developers how to use it on their projects. Probably nobody ever used it because it was a simple project but I was feeling good about my contribution.
@@ -86,14 +139,25 @@ If your only goal is to show off your work, you may not even want contributions,
   </p>
 </aside>
 
+あなたのプロジェクトが成長するにつれて、そのコミュニティはあなたのコードだけではなく、ほかのタスクも必要になってくる。それは、イシューに返信すること、コードをレビューすること、プロジェクトの存在を広めることである。
 As your project grows, your community may need more than just code from you. Responding to issues, reviewing code, and evangelizing your project are all important tasks in an open source project.
 
+それらのコーディングしないタスクに、あなたはどれだけの時間を費やせば良いだろうか。それは、あなたのプロジェクトの大きさと範囲によって決まる。あなたはメンテナとなり、あなたを助けてくれる誰かを探す用意を進めるべきである。
 While the amount of time you spend on non-coding tasks will depend on the size and scope of your project, you should be prepared as a maintainer to address them yourself or find someone to help you.
 
+**もしあなたがオープンソースプロジェクトを運営する会社のメンバーだったら**、知っておかなければならないことがある。そのプロジェクトを成長させるためには、社内リソースが必要になるということだ。プロジェクト公開後のメンテナンスに誰が責任をもつのか明確化したり、これまであなたが担当していたタスクを社内メンバーにどう共有するか考えることになる。
 **If you're part of a company open sourcing a project,** make sure your project has the internal resources it needs to thrive. You'll want to identify who's responsible for maintaining the project after launch, and how you'll share those tasks with your community.
 
+プロジェクトを広めたり、メンテナンスするのには予算や人員が必要になるかもしれない。そうであるなら、上記の社内での話し合いは、できるだけ早めにやったほうが良い。
 If you need a dedicated budget or staffing for promotion, operations and maintaining the project, start those conversations early.
 
+<aside markdown="1" class="pquote">
+  <img src="https://avatars2.githubusercontent.com/u/1857993?v=3&s=460" class="pquote-avatar" alt="avatar">
+  あなたがオープンソースプロジェクトを始めるにあたり、覚えておくべき重要なことがあります。それはプロジェクト管理プロセスをよく考えるということなのですが、あなたのプロジェクト周辺のコミュニティにいるコントリビュータの人々や彼らの技能について配慮するということです。恐れずにコントリビュータを巻き込みましょう。たとえ彼らがあなたに雇われていなかったとしても、それはプロジェクトの重要な側面に影響するわけではありません。特に彼らが頻繁にコントリビュートしてくれる人々であれば、なおさらです。
+ <p markdown="1" class="pquote-credit">
+— @captainsafia, ["プロジェクトをオープンソースにしたいんじゃない？そうでしょ？"](https://writing.safia.rocks/2016/12/06/so-you-wanna-open-source-a-project-eh/)
+  </p>
+</aside>
 <aside markdown="1" class="pquote">
   <img src="https://avatars2.githubusercontent.com/u/1857993?v=3&s=460" class="pquote-avatar" alt="avatar">
   As you begin to open source the project, it's important to make sure that your management processes take into consideration the contributions and abilities of the community around your project. Don't be afraid to involve contributors who are not employed in your business in key aspects of the project — especially if they are frequent contributors.
@@ -102,10 +166,13 @@ If you need a dedicated budget or staffing for promotion, operations and maintai
   </p>
 </aside>
 
+### 他のプロジェクトにコントリビュートする
 ### Contributing to other projects
 
+もしあなたのゴールが、どのように他者と協働すればよいか学ぶこと、あるいはオープンソースがどのようにはたらくか理解することだとすれば、既存のプロジェクトに貢献してみるのはどうでしょうか。あなたがすでに利用していて愛着の湧くプロジェクトで始めるのが良いでしょう。プロジェクトにコントリビュートするというのは、誤字を直すことやドキュメントをアップデートするようなシンプルなことでも歓迎されます。
 If your goal is to learn how to collaborate with others or understand how open source works, consider contributing to an existing project. Start with a project that you already use and love. Contributing to a project can be as simple as fixing typos or updating documentation.
 
+コントリビュータとしてどのように始めればよいか分からない場合、[どうやってオープンソースに貢献するか](../how-to-contribute/)をチェックしてみてください。
 If you're not sure how to get started as a contributor, check out our [How to Contribute to Open Source guide](../how-to-contribute/).
 
 ## Launching your own open source project
