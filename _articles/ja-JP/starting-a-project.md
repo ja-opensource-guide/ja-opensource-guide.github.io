@@ -175,12 +175,16 @@ If your goal is to learn how to collaborate with others or understand how open s
 コントリビュータとしてどのように始めればよいか分からない場合、[どうやってオープンソースに貢献するか](../how-to-contribute/)をチェックしてみてください。
 If you're not sure how to get started as a contributor, check out our [How to Contribute to Open Source guide](../how-to-contribute/).
 
+## 自分のオープンソースプロジェクトを立ち上げる
 ## Launching your own open source project
 
+あなたが作ったものをオープンソースにするのに十分な時間というものは存在しません。あなたはアイディアをオープンソースにすることができるのです。その作業は実はすでに進行しているか、あるいは数年の間クローズドソースでいた後にオープンソースとなるのです。
 There is no perfect time to open source your work. You can open source an idea, a work in progress, or after years of being closed source.
 
+一般的にプロジェクトをオープンソース化するべき状況としては、あなたのプロジェクトを他者から見られて気持ち良いと思える場合か、フィードバックをもらいたいという場合です。
 Generally speaking, you should open source your project when you feel comfortable having others view, and give feedback on, your work.
 
+プロジェクトをオープンソース化するか決断する段階にいなかったとしても、あらゆるプロジェクトには以下のドキュメントが作成されているべきです。
 No matter which stage you decide to open source your project, every project should include the following documentation:
 
 * [Open source license](https://help.github.com/articles/open-source-licensing/#where-does-the-license-live-on-my-repository)
@@ -188,37 +192,61 @@ No matter which stage you decide to open source your project, every project shou
 * [Contributing guidelines](https://help.github.com/articles/setting-guidelines-for-repository-contributors/)
 * [Code of conduct](../code-of-conduct/)
 
+メンテナとして、これらのコンポーネントは次のようなことについてあなたを助けてくれるでしょう。あなたが最終的にやりたいことを明確化すること、コントリビューションを管理すること、あなた自身を含むあらゆる人々の法的な権利を守ること、についてです。それらはあなたがより意義深い経験をするための大きな助けとなるでしょう。
 As a maintainer, these components will help you communicate expectations, manage contributions, and protect everyone's legal rights (including your own). They significantly increase your chances of having a positive experience.
 
+もしあなたのプロジェクトがGitHubにあるなら、それらのファイルをあなたのrootディレクトリに推奨されたファイル名にして設置すると良いでしょう。そうすれば、GitHubはそれを認識して自動的にあなたを購読している人々に知らせてくれるでしょう。
 If your project is on GitHub, putting these files in your root directory with the recommended filenames will help GitHub recognize and automatically surface them to your readers.
 
+### ライセンスを選ぶ
 ### Choosing a license
 
+オープンソースライセンスは次のことを保証する。他者がそのプロジェクトを利用、複製、修正、そしてあなたのプロジェクトに貢献し返してくれる場合などに発生しうる、悪影響をなくしてくれる。法的に面倒な状況になることからも、あなたを守ってくれる。**あなたがオープンソースプロジェクトを立ち上げる場合には、必ずライセンスを含めなければならない。**
 An open source license guarantees that others can use, copy, modify, and contribute back to your project without repercussions. It also protects you from sticky legal situations. **You must include a license when you launch an open source project.**
 
+法律に関する仕事は楽しいものではありません。しかし、良いニュースがあるとすれば、あなたは既存のライセンスをあなたのプロジェクトにコピー&ペーストできることです。それは、ほんの短時間であなたのハードワークを守ることができる、ということです。
 Legal work is no fun. The good news is that you can copy and paste an existing license into your repository. It will only take a minute to protect your hard work.
 
+[MIT](https://choosealicense.com/licenses/mit/)、[Apache 2.0](https://choosealicense.com/licenses/apache-2.0/)、[GPLv3](https://choosealicense.com/licenses/gpl-3.0/)は、もっとも人気のあるオープンソースライセンスですが、[その他にのオプション](https://choosealicense.com)も選択することはできる。
 [MIT](https://choosealicense.com/licenses/mit/), [Apache 2.0](https://choosealicense.com/licenses/apache-2.0/), and [GPLv3](https://choosealicense.com/licenses/gpl-3.0/) are the most popular open source licenses, but [there are other options](https://choosealicense.com) to choose from.
 
+あなたが新しいプロジェクトをGitHub上で作成するなら、どのライセンスを選択するか選ぶオプションが表示されます。オープンソースライセンスを含めることは、あなたのGitHubプロジェクトをオープンソースにすることを意味します。
 When you create a new project on GitHub, you are given the option to select a license. Including an open source license will make your GitHub project open source.
 
+![ライセンスを選ぶ](/assets/images/starting-a-project/repository-license-picker.png)
 ![pick a license](/assets/images/starting-a-project/repository-license-picker.png)
 
+その他に質問がある場合や、オープンソースプロジェクトの運営するうえでの法的な側面に興味があるなら、[こちらのページで案内しています](../legal/)。
 If you have other questions or concerns around the legal aspects of managing an open source project, [we've got you covered](../legal/).
 
+### READMEを書く
 ### Writing a README
 
+READMEは、あなたのプロジェクトをどうやって使うのか説明するだけでなく、ほかにも意味があります。なぜあなたのプロジェクトが重要なのか、プロジェクト利用者がどんなことをできるようになるか、ということも説明します。
 READMEs do more than explain how to use your project. They also explain why your project matters, and what your users can do with it.
 
+あなたのREADMEについて、下記の質問に答えてみてください:
 In your README, try to answer the following questions:
 
+* このプロジェクトは何をやっているのか？
+* なぜこのプロジェクトが役に立つのか？
+* どうやって使い始めればよいのか？
+* 詳しいヘルプを知りたくなったとき、どこを見ればよいか？
 * What does this project do?
 * Why is this project useful?
 * How do I get started?
 * Where can I get more help, if I need it?
 
+READMEに関する他の質問についても答えることができます。たとえば、コントリビューションをどう扱うのか、プロジェクトのゴールはどう設定されているのか、ライセンスと帰属に関する情報、など。もしあなたがコントリビュータを受け入れたくない場合や、実用的な形としてまだ仕上がっていない場合には、それらの情報もREADMEに書いておきましょう。
 You can use your README to answer other questions, like how you handle contributions, what the goals of the project are, and information about licenses and attribution. If you don't want to accept contributions, or your project is not yet ready for production, write this information down.
 
+<aside markdown="1" class="pquote">
+  <img src="https://avatars0.githubusercontent.com/u/168572?v=3&s=460" class="pquote-avatar" alt="avatar">
+  良いドキュメンテーションが意味するものとは、より多くのユーザーがいて、より少ないサポートで、より多くのコントリビュータがいる、ということです。忘れてはいけないことは、そのドキュメントを読んでいる人たちは、あなたではないということです。プロジェクトに訪れてくれたその人たちは、あなたとは全く異なる経験をしてきた人々なのです。
+  <p markdown="1" class="pquote-credit">
+— @limedaring, ["あなたが書いた言葉をもっと読んでもらうために（動画）"](https://www.youtube.com/watch?v=8LiV759Bje0&list=PLmV2D6sIiX3U03qc-FPXgLFGFkccCEtfv&index=10)
+  </p>
+</aside>
 <aside markdown="1" class="pquote">
   <img src="https://avatars0.githubusercontent.com/u/168572?v=3&s=460" class="pquote-avatar" alt="avatar">
   Better documentation means more users, less support requests, and more contributors. (...) Remember that your readers aren't you. There are people who might come to a project who have completely different experiences.
@@ -227,40 +255,60 @@ You can use your README to answer other questions, like how you handle contribut
   </p>
 </aside>
 
+ときどき、READMEを書かないようにしている人々がいて、彼らはプロジェクトがまだ完成していないから、あるいはコントリビューションを望んでいないから、と思っているようです。しかし、それらの理由というのは、実はREADMEを書くにはとても良い機会なのです。
 Sometimes, people avoid writing a README because they feel like the project is unfinished, or they don't want contributions. These are all very good reasons to write one.
 
+もっとインスピレーションが必要ということであれば、@18Fの["READMEをより読みやすくする"](https://pages.18f.gov/open-source-guide/making-readmes-readable/)や、@PurpleBoothの[READMEテンプレート](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)を参照すれば、より理想的なREADMEを書けるでしょう。
 For more inspiration, try using @18F's ["Making READMEs Readable"](https://pages.18f.gov/open-source-guide/making-readmes-readable/) or @PurpleBooth's [README template](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2) to write a complete README.
 
+READMEファイルをあなたのプロジェクトのrootディレクトリに置けば、GitHubは自動的にリポジトリのホームに表示してくれます。
 When you include a README file in the root directory, GitHub will automatically display it on the repository homepage.
 
+### コントリビュートのガイドラインを書く
 ### Writing your contributing guidelines
 
+CNOTRIBUTINGファイルとは、あなたのプロジェクトを見ている人に、どうすればそのプロジェクトに参加できるのかを伝えるものです。たとえば、以下の情報を記載していたとして:
 A CONTRIBUTING file tells your audience how to participate in your project. For example, you might include information on:
 
+* どうやってバグリポートを提出するか（[イシューとプルリクエストのテンプレート](https://github.com/blog/2111-issue-and-pull-request-templates)を使ってください）
+* どうやって新しい機能を提案するか
+* どうやって環境設定を行いテストを行うか
 * How to file a bug report (try using [issue and pull request templates](https://github.com/blog/2111-issue-and-pull-request-templates))
 * How to suggest a new feature
 * How to set up your environment and run tests
 
+技術的な詳細に加えて、CONTRIBUTINGファイルはあなたがどんなことをコントリビュートしてほしいのか、ということを伝える機会として活用できます。たとえば:
 In addition to technical details, a CONTRIBUTING file is an opportunity to communicate your expectations for contributions, such as:
 
+* どのような種類のコントリビューションをあなたが求めているか
+* あなたが考えているロードマップやビジョン
+* どのような手段でコントリビュータはあなたに連絡を取るべきか（取るべきでないか）
 * The types of contributions you're looking for
 * Your roadmap or vision for the project
 * How contributors should (or should not) get in touch with you
 
+温かい心をもって、友好的な口調で、やってほしいコントリビューションを具体的に伝えること（たとえばドキュメンテーションを書くこと、ウェブサイトを作ること）で、これからの長い道のりの間、新しく参加してくれた人は、歓迎されているという気持ちでワクワクしながらプロジェクトに参加することができる。
 Using a warm, friendly tone and offering specific suggestions for contributions (such as writing documentation, or making a website) can go a long way in making newcomers feel welcomed and excited to participate.
 
+たとえば、[Active Admin](https://github.com/activeadmin/activeadmin/)は[コントリビューションのガイド](https://github.com/activeadmin/activeadmin/blob/master/CONTRIBUTING.md) をこんな文章で書き始めている:
 For example, [Active Admin](https://github.com/activeadmin/activeadmin/) starts [its contributing guide](https://github.com/activeadmin/activeadmin/blob/master/CONTRIBUTING.md) with:
 
+まずはじめに、感謝の気持ちを伝えたい。あなたがActive Adminへのコントリビュートを考えてくれていることに。あなたのような人々が、Active Adminをすばらしいツールにしてくれる。
 > First off, thank you for considering contributing to Active Admin. It's people like you that make Active Admin such a great tool.
 
+あなたのプロジェクトの最初期の段階では、CONTRIBUTINGファイルはシンプルなものだろう。あなたが常に説明すべきことだが、どうやってバグレポートを提出するか、技術的な必要条件（たとえばテスト）にどのようなものがあるか、ということをコントリビュータに伝えなければならない。
 In the earliest stages of your project, your CONTRIBUTING file can be simple. You should always explain how to report bugs or file issues, and any technical requirements (like tests) to make a contribution.
 
+プロジェクト開始からある程度の時期が経ったら、よくある質問をCONTRIBUTINGファイルに書くと良いでしょう。この情報を書くことで、何度も同じ内容の質問をされることを回避できます。
 Over time, you might add other frequently asked questions to your CONTRIBUTING file. Writing down this information means fewer people will ask you the same questions over and over again.
 
+CONTRIBUTINGファイルを書くことについてもっとヘルプが必要であれば、@nayafiaの[コントリビューションガイドのテンプレート](https://github.com/nayafia/contributing-template/blob/master/CONTRIBUTING-template.md) 、あるいは@mozillaの ["どうやってCONTRIBUTING.mdを書くか"](http://mozillascience.github.io/working-open-workshop/contributing/)が助けになるでしょう。
 For more help with writing your CONTRIBUTING file, check out @nayafia's [contributing guide template](https://github.com/nayafia/contributing-template/blob/master/CONTRIBUTING-template.md) or @mozilla's ["How to Build a CONTRIBUTING.md"](http://mozillascience.github.io/working-open-workshop/contributing/).
 
+リンクをREADMEからCONTRIBUTINGファイルに貼っておくことで、より多くの人びとに見てもらうことができます。もし[CONTRIBUTINGファイルをあなたのプロジェクトのリポジトリに置いたら](https://help.github.com/articles/setting-guidelines-for-repository-contributors/)、GitHubは自動的にリンクをあなたのファイルに貼ってくれますが、それはコントリビュータがイシューを作成した時、あるいはプルリクエストを開いたときに貼られます。
 Link to your CONTRIBUTING file from your README, so more people see it. If you [place the CONTRIBUTING file in your project's repository](https://help.github.com/articles/setting-guidelines-for-repository-contributors/), GitHub will automatically link to your file when a contributor creates an issue or opens a pull request.
 
+![コントリビューションガイドライン](/assets/images/starting-a-project/Contributing-guidelines.jpg)
 ![contributing guidelines](/assets/images/starting-a-project/Contributing-guidelines.jpg)
 
 ### Establishing a code of conduct
