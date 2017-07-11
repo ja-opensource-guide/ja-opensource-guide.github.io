@@ -344,39 +344,63 @@ Much like open source licenses, there are also emerging standards for codes of c
 そのテキストを直接ペーストしてください。あなたのリポジトリの中にあるCODE_OF_CONDUCTファイルの中に。そのファイルはあなたのプロジェクトのrootディレクトリに置き、探しやすいように、そしてREADMEからリンクしやすいようにしておきましょう。
 Paste the text directly into a CODE_OF_CONDUCT file in your repository. Keep the file in your project's root directory so it's easy to find, and link to it from your README.
 
+## プロジェクト名とブランド戦略
 ## Naming and branding your project
 
+ブランド戦略とは、華やかなロゴや人気を呼びそうなプロジェクト名をつける、ということだけにとどまりません。プロジェクトをどのように紹介するかということであり、どのような人々に届けたいのかという意味をもっています。
 Branding is more than a flashy logo or catchy project name. It's about how you talk about your project, and who you reach with your message.
 
+### 正しい名前を選ぶ
 ### Choosing the right name
 
+覚えやすい名前を選ぶことが重要であり、理想的には、何をするプロジェクトなのか伝えることができればなお良いでしょう。たとえば:
 Pick a name that is easy to remember and, ideally, gives some idea of what the project does. For example:
 
+* [Sentry](https://github.com/getsentry/sentry) アプリのクラッシュを監視してレポートを送る
+* [Thin](https://github.com/macournoyer/thin) 速くてシンプルなRuby製のWebサーバ
 * [Sentry](https://github.com/getsentry/sentry) monitors apps for crash reporting
 * [Thin](https://github.com/macournoyer/thin) is a fast and simple Ruby web server
 
+もし既存プロジェクトのうえに乗ったプロジェクトを立ち上げるなら、それらのプロジェクトの名前を接頭辞として用いれば、何をするプロジェクトなのかを理解する助けになるでしょう。（例: [node-fetch](https://github.com/bitinn/node-fetch)はwindow.fetchをNode.jsにもたらしてくれます）
 If you're building upon an existing project, using their name as a prefix can help clarify what your project does (ex. [node-fetch](https://github.com/bitinn/node-fetch) brings `window.fetch` to Node.js).
 
+何よりも明瞭さを考慮してください。語呂合わせで名前を決めることは楽しいですが、忘れてはいけないことがあります。それは、ジョークは異なる文化や異なる経験をして育ってきた人々にとっては、翻訳できない可能性があるということです。潜在的なユーザのなかには会社に雇われている人びともいるかもしれません。あなたが彼らを不快な気持ちにさせるつもりはないとしても、彼らは仕事中にジョークを含んだプロジェクトのことをマジメに説明しなければならないのですよ！
 Consider clarity above all. Puns are fun, but remember that some jokes might not translate to other cultures or people with different experiences from you. Some of your potential users might be company employees: you don't want to make them uncomfortable when they have to explain your project at work!
 
+### 別プロジェクトと同じ名前にしない
 ### Avoiding name conflicts
 
+ほかのオープンソースプロジェクトに似たような名前がないか確認してください。特に、同じ言語やエコシステムを共有している場合には。もし既存の人気プロジェクトと重複していたら、利用者を混乱させることになってしまいます。
 Check for open source projects with a similar name, especially if you share the same language or ecosystem. If your name overlaps with a popular existing project, you might confuse your audience.
 
+ウェブサイト、ツイッターのハンドルネーム、あるいはその他の資産をもちいてプロジェクトを広めたいと思うなら、欲しい名前を取得することができるか確認しておきましょう。できることなら、平静な気持ちで、[いますぐ予約しましょう](https://instantdomainsearch.com/) 。いますぐ使う予定がなかったとしても。
 If you want a website, Twitter handle, or other properties to represent your project, make sure you can get the names you want. Ideally, [reserve those names now](https://instantdomainsearch.com/) for peace of mind, even if you don't intend to use them just yet.
 
+重要なことですが、プロジェクト名は商標権を犯してはいけません。あなたの会社にプロジェクトを停止させられるかもしれませんし、法的な行動を取られるかもしれません。不必要なリスクは避けましょう。
 Make sure that your project's name doesn't infringe upon any trademarks. A company might ask you to take down your project later on, or even take legal action against you. It's just not worth the risk.
 
+[WIPO Global Brand Database](http://www.wipo.int/branddb/en/)を見れば、重複したトレードマークがないか調べることができます。もし会社としてオープンソースプロジェクトを立ち上げようとしているのであれば、右の記事に書いてあるような内容は、[貴社の法務チームが相談に乗ってくれるでしょう](../legal/)。
 You can check the [WIPO Global Brand Database](http://www.wipo.int/branddb/en/) for trademark conflicts. If you're at a company, this is one of the things your [legal team can help you with](../legal/).
 
+最後に、プロジェクト名をGoogle検索してみましょう。これからプロジェクトを利用する人たちは、簡単にプロジェクトを見つけることができそうですか？もし関係ないウェブサイトが検索結果に表示されているとしたら、見つけにくくなりますよね？
 Finally, do a quick Google search for your project name. Will people be able to easily find your project? Does something else appear in the search results that you wouldn't want them to see?
 
+### 言葉遣いやコーディングスタイルが、ブランドにも影響を与える！
 ### How you write (and code) affects your brand, too!
 
+プロジェクトの至るところで、何かを書くことになります。たとえば、README、チュートリアル、コミュニティのドキュメント、イシューへの返信、あるいはニュースレターやメーリングリストへの投稿など。
 Throughout the life of your project, you'll do a lot of writing: READMEs, tutorials, community documents, responding to issues, maybe even newsletters and mailing lists.
 
+公式なドキュメントであるか、カジュアルなメールなのかに関わらず、あなたがどのような書き方をするかということはプロジェクトのブランドに影響を与えるのです。考えてもみてください。プロジェクトを訪問してくれた人があなたの振る舞いを見たとき、どういう印象を持つでしょうか？あなたが伝えようとしていることが、適切な言葉で表現されているでしょうか？
 Whether it's official documentation or a casual email, your writing style is part of your project's brand. Consider how you might come across to your audience and whether that is the tone you wish to convey.
 
+<aside markdown="1" class="pquote">
+  <img src="https://avatars0.githubusercontent.com/u/11321?v=3&s=460" class="pquote-avatar" alt="avatar">
+  メーリングリストに投稿されるすべてのスレッドに投稿するよう努力し、規範となるような振る舞いをし、親切な受け答えを心がけ、イシューに真摯に返信し、あらゆる場面で誰かの役に立つように心がけた。すると、周りの人々は質問をするだけでなく、別の人の質問に答えて手助けをするようになった。私は大きな喜びを感じた。コミュニティにいる人々は、私のやり方のまねをしたのだ。
+  <p markdown="1" class="pquote-credit">
+— @janl on [CouchDB](https://github.com/apache/couchdb), ["持続可能なオープンソース"](http://writing.jan.io/2015/11/20/sustainable-open-source.html)
+  </p>
+</aside>
 <aside markdown="1" class="pquote">
   <img src="https://avatars0.githubusercontent.com/u/11321?v=3&s=460" class="pquote-avatar" alt="avatar">
   I tried to be involved with every thread on the mailing list, and showing exemplary behaviour, being nice to people, taking their issues seriously and trying to be helpful overall. After a while, people stuck around not to only ask questions, but to help with the answering as well, and to my complete delight, they mimicked my style.
@@ -385,10 +409,13 @@ Whether it's official documentation or a casual email, your writing style is par
   </p>
 </aside>
 
+温かい気持ちで、他者を巻き込むような言葉遣いをすること（たとえば"彼ら"のような言葉を用いること。たとえ特定の誰かに言及するような場合であっても）は、プロジェクトを運営していく長い期間に渡って、新しいコントリビュータを歓迎する雰囲気を作ってくれます。これは、ある言語に限ったことではなく、英語ネイティブ以外の人々についても同じことが言えます。
 Using warm, inclusive language (such as "them", even when referring to the single person) can go a long way in making your project feel welcoming to new contributors. Stick to simple language, as many of your readers may not be native English speakers.
 
+どういう言葉で表現するかということと以上に、あなたのコーディングスタイルも同様にプロジェクトのブランドの一部となっていくでしょう。[Angular](https://github.com/johnpapa/angular-styleguide)や[jQuery](http://contribute.jquery.org/style-guide/js/)は、厳格なコーディングスタイルとガイドラインを持つ事例です。
 Beyond how you write words, your coding style may also become part of your project's brand. [Angular](https://github.com/johnpapa/angular-styleguide) and [jQuery](http://contribute.jquery.org/style-guide/js/) are two examples of projects with rigorous coding styles and guidelines.
 
+スタイルガイドを用意する必要性ですが、プロジェクトが始まったばかりの頃は必要というわけではありませんし、むしろコーディングスタイルの違いにおもしろさを発見するかもしれません。しかし、事前に予測しておくことは重要で、あなたの言葉遣いやコーディングスタイルが、他者を魅了したり、あるいはやる気を削ぐ可能性があることは頭に入れておくべきです。プロジェクト最初期の段階というのは、あなたが見たいようにできる良い機会です。
 It isn't necessary to write a style guide for your project when you're just starting out, and you may find that you enjoy incorporating different coding styles into your project anyway. But you should anticipate how your writing and coding style might attract or discourage different types of people. The earliest stages of your project are your opportunity to set the precedent you wish to see.
 
 ## Your pre-launch checklist
