@@ -418,15 +418,19 @@ Beyond how you write words, your coding style may also become part of your proje
 スタイルガイドを用意する必要性ですが、プロジェクトが始まったばかりの頃は必要というわけではありませんし、むしろコーディングスタイルの違いにおもしろさを発見するかもしれません。しかし、事前に予測しておくことは重要で、あなたの言葉遣いやコーディングスタイルが、他者を魅了したり、あるいはやる気を削ぐ可能性があることは頭に入れておくべきです。プロジェクト最初期の段階というのは、あなたが見たいようにできる良い機会です。
 It isn't necessary to write a style guide for your project when you're just starting out, and you may find that you enjoy incorporating different coding styles into your project anyway. But you should anticipate how your writing and coding style might attract or discourage different types of people. The earliest stages of your project are your opportunity to set the precedent you wish to see.
 
+## ローンチ直前のチェックリスト
 ## Your pre-launch checklist
 
+プロジェクトをオープンソース化する用意はできていますか？このチェックリストが役に立つでしょう。すべての項目にチェックが入りましたか？では準備OKです！["publish"をクリック](https://help.github.com/articles/making-a-private-repository-public/) して、自分を褒めてあげましょう。
 Ready to open source your project? Here's a checklist to help. Check all the boxes? You're ready to go! [Click "publish"](https://help.github.com/articles/making-a-private-repository-public/) and pat yourself on the back.
 
+**ドキュメンテーション**
 **Documentation**
 
 <div class="clearfix mb-2">
   <input type="checkbox" id="cbox1" class="d-block float-left mt-1 mr-2" value="checkbox">
   <label for="cbox1" class="overflow-hidden d-block text-normal">
+    LICENSEファイルが用意されていて、その中にはオープンソースライセンスが含まれている
     Project has a LICENSE file with an open source license
   </label>
 </div>
@@ -434,6 +438,7 @@ Ready to open source your project? Here's a checklist to help. Check all the box
 <div class="clearfix mb-2">
   <input type="checkbox" id="cbox2" class="d-block float-left mt-1 mr-2" value="checkbox">
   <label for="cbox2" class="overflow-hidden d-block text-normal">
+    基本となるドキュメンテーションが用意されている（README、CONTRIBUTING、CODE_OF_CONDUCT）
     Project has basic documentation (README, CONTRIBUTING, CODE_OF_CONDUCT)
   </label>
 </div>
@@ -441,6 +446,7 @@ Ready to open source your project? Here's a checklist to help. Check all the box
 <div class="clearfix mb-2">
   <input type="checkbox" id="cbox3" class="d-block float-left mt-1 mr-2" value="checkbox">
   <label for="cbox3" class="overflow-hidden d-block text-normal">
+    プロジェクト名が、覚えやすい名前になっている。何をするプロジェクトなのか推測しやすい。そして、ほかのプロジェクトと名前が重複したり商標権の違反をしていない
     The name is easy to remember, gives some idea of what the project does, and does not conflict with an existing project or infringe on trademarks
   </label>
 </div>
@@ -448,15 +454,18 @@ Ready to open source your project? Here's a checklist to help. Check all the box
 <div class="clearfix mb-4">
   <input type="checkbox" id="cbox4" class="d-block float-left mt-1 mr-2" value="checkbox">
   <label for="cbox4" class="overflow-hidden d-block text-normal">
+    イシューが最新の状態になっていて、ラベル付けされるなど整然とまとまっている
     The issue queue is up-to-date, with issues clearly organized and labeled
   </label>
 </div>
 
+**コード**
 **Code**
 
 <div class="clearfix mb-2">
   <input type="checkbox" id="cbox5" class="d-block float-left mt-1 mr-2" value="checkbox">
   <label for="cbox5" class="overflow-hidden d-block text-normal">
+    コードの書き方に一貫性があり、function/method/variableの名前が分かりやすく書かれている
     Project uses consistent code conventions and clear function/method/variable names
   </label>
 </div>
@@ -464,6 +473,7 @@ Ready to open source your project? Here's a checklist to help. Check all the box
 <div class="clearfix mb-2">
   <input type="checkbox" id="cbox6" class="d-block float-left mt-1 mr-2" value="checkbox">
   <label for="cbox6" class="overflow-hidden d-block text-normal">
+    コードを補完するコメントが書かれていて、そのコードが書かれた意図やエッジケースについて説明されている
     The code is clearly commented, documenting intentions and edge cases
   </label>
 </div>
@@ -471,26 +481,32 @@ Ready to open source your project? Here's a checklist to help. Check all the box
 <div class="clearfix mb-4">
   <input type="checkbox" id="cbox7" class="d-block float-left mt-1 mr-2" value="checkbox">
   <label for="cbox7" class="overflow-hidden d-block text-normal">
+    機密情報がリビジョン履歴、イシュー、プルリクエストに残っていない（例: パスワードや公開したくない情報など）
     There are no sensitive materials in the revision history, issues, or pull requests (ex. passwords or other non-public information)
   </label>
 </div>
 
+**人**
 **People**
 
+個人としてオープンソース化する場合:
 If you're an individual:
 
 <div class="clearfix mb-4">
   <input type="checkbox" id="cbox8" class="d-block float-left mt-1 mr-2" value="checkbox">
   <label for="cbox8" class="overflow-hidden d-block text-normal">
+  法務チームからオープンソース化することの許可を得ていて、そして（または）、知的財産やオープンソースポリシーについてあなたの会社にすでに相談している（もしあなたが会社や組織に雇用されている立場なら）
   You've talked to the legal department and/or understand the IP and open source policies of your company (if you're an employee somewhere)
   </label>
 </div>
 
+会社や組織としてオープンソース化する場合:
 If you're a company or organization:
 
 <div class="clearfix mb-2">
   <input type="checkbox" id="cbox9" class="d-block float-left mt-1 mr-2" value="checkbox">
   <label for="cbox9" class="overflow-hidden d-block text-normal">
+    法務チームからオープンソース化することの許可を得ている
     You've talked to your legal department
   </label>
 </div>
@@ -498,6 +514,7 @@ If you're a company or organization:
 <div class="clearfix mb-2">
   <input type="checkbox" id="cbox10" class="d-block float-left mt-1 mr-2" value="checkbox">
   <label for="cbox10" class="overflow-hidden d-block text-normal">
+    マーケティングプランは計画済みであり、どう告知するか、どうプロモーションするか明確に考えられている
     You have a marketing plan for announcing and promoting the project
   </label>
 </div>
@@ -505,6 +522,7 @@ If you're a company or organization:
 <div class="clearfix mb-2">
   <input type="checkbox" id="cbox11" class="d-block float-left mt-1 mr-2" value="checkbox">
   <label for="cbox11" class="overflow-hidden d-block text-normal">
+    プロジェクトの担当者がすでに決定していて、コミュニティ上のやりとりを管理することになっている（たとえばイシューへの返信、レビュー、プルリクエストのマージなど）
     Someone is committed to managing community interactions (responding to issues, reviewing and merging pull requests)
   </label>
 </div>
@@ -512,10 +530,13 @@ If you're a company or organization:
 <div class="clearfix mb-4">
   <input type="checkbox" id="cbox12" class="d-block float-left mt-1 mr-2" value="checkbox">
   <label for="cbox12" class="overflow-hidden d-block text-normal">
+    少なくとも2人以上の組織内の人が、プロジェクトの管理者権限をもっている
     At least two people have administrative access to the project
   </label>
 </div>
 
+## すべて完了です！
 ## You did it!
 
+おめでとうございます！初めてのオープンソースプロジェクトは、これで公開されました。結果がどうなるとしても、他者に開かれたかたちで何かを作るということは、コミュニティにとって大きなプレゼントになるのです。あらゆるコミット、コメント、プルリクエストは、あなたの成長の機会となるだけでなく、他者が学ぶ機会でもあるのです。そして、その機会はまさに、あなたの手によって作られているのです。
 Congratulations on open sourcing your first project. No matter the outcome, working in public is a gift to the community. With every commit, comment, and pull request, you're creating opportunities for yourself and for others to learn and grow.
